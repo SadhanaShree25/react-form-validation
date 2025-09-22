@@ -7,7 +7,7 @@ function FormValidation() {
   const [error, setError] = useState("");
   const [submittedUsers, setSubmittedUsers] = useState([]);
 
-  // ✅ Handle form submit
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -29,7 +29,7 @@ function FormValidation() {
     setEmail("");
   };
 
-  // ✅ Delete user by index
+  //  Delete user by index
   const handleDelete = (index) => {
     setSubmittedUsers((prevUsers) =>
       prevUsers.filter((_, i) => i !== index)
@@ -68,7 +68,7 @@ function FormValidation() {
         </button>
       </form>
 
-      {/* Show list of submitted users */}
+      
       {submittedUsers.length > 0 && (
         <div className="submitted-data">
           <h3>Submitted Users</h3>
